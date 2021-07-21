@@ -18,7 +18,7 @@ use Magento\Directory\Model\ResourceModel\Country\Collection as CountryCollectio
 use Magento\Directory\Model\ResourceModel\Country\CollectionFactory as CountryCollectionFactory;
 use Magento\Eav\Model\Entity\Attribute\Source\Table;
 use Magento\Eav\Model\ResourceModel\Entity\Attribute\Option\CollectionFactory as OptionCollectionFactory;
-use Magento\Eav\Model\ResourceModel\Entity\Attribute\OptionFactory as AttrubuteOptionFactory;
+use Magento\Eav\Model\ResourceModel\Entity\Attribute\OptionFactory as AttributeOptionFactory;
 use Magento\Store\Model\ScopeInterface;
 use Magento\Store\Model\StoreManagerInterface;
 
@@ -54,7 +54,7 @@ class CountryWithWebsites extends Table
 
     /**
      * @param OptionCollectionFactory $attrOptionCollectionFactory
-     * @param AttrubuteOptionFactory $attrOptionFactory
+     * @param AttributeOptionFactory $attrOptionFactory
      * @param CountryCollectionFactory $countriesFactory
      * @param AllowedCountries $allowedCountriesReader
      * @param StoreManagerInterface $storeManager
@@ -62,7 +62,7 @@ class CountryWithWebsites extends Table
      */
     public function __construct(
         OptionCollectionFactory $attrOptionCollectionFactory,
-        AttrubuteOptionFactory $attrOptionFactory,
+        AttributeOptionFactory $attrOptionFactory,
         CountryCollectionFactory $countriesFactory,
         AllowedCountries $allowedCountriesReader,
         StoreManagerInterface $storeManager,
